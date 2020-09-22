@@ -1,55 +1,34 @@
-const express = require("express");
-const nodemailer = require("nodemailer");
-const bodyParser = require("body-parser");
-const key = require("./key");
-const app = express();
-app.use(bodyParser.urlencoded({extended: false}));
-app.use(bodyParser.json());
-
-app.post("/message", (req, res) => {
-  console.log(req.body);
-  const output = `
-  <h1> message </h1>
-  <ul>  
-    <h3>Name: ${req.body.name}</h3>
-    <h3>Email: ${req.body.email}</h3>
-    <h3>Subject: ${req.body.subject}</h3>
-  </ul>
-  <h3>Message</h3>
-  <h1>${req.body.contant}</h1>
-`;
-
-  var transporter = nodemailer.createTransport({
-    service: "gmail",
-    auth: {
-      user: "teenozaytoon@gmail.com",
-      pass: key.password,
-    },
-  });
-
-  var mailOptions = {
-    from: req.body.email,
-    to: "zalkhatib@mail.sfsu.edu",
-    subject: "You have a new message",
-    html: output,
-  };
-
-  transporter.sendMail(mailOptions, function (error, info) {
-    if (error) {
-      console.log(error);
-      // res.render(__dirname + "/views/failed.ejs", {msg: "email sent"});
-    } else {
-      console.log("Email sent: " + info.response);
-      // res.render(__dirname + "/views/success.ejs", {msg: "email sent"});
-    }
-  });
-});
-
-if (process.env.NODE_ENV === "production") {
+const express = require("express"),
+  nodemailer = require("nodemailer"),
+  bodyParser = require("body-parser"),
+  key = require("./key"),
+  app = express();
+if (
+  (app.use(bodyParser.urlencoded({extended: !1})),
+  app.use(bodyParser.json()),
+  app.post("/message", (e, s) => {
+    console.log(e.body);
+    const o = `\n  <h1> message </h1>\n  <ul>  \n    <h3>Name: ${e.body.name}</h3>\n    <h3>Email: ${e.body.email}</h3>\n    <h3>Subject: ${e.body.subject}</h3>\n  </ul>\n  <h3>Message</h3>\n  <h1>${e.body.contant}</h1>\n`;
+    var a = nodemailer.createTransport({
+        service: "gmail",
+        auth: {user: "teenozaytoon@gmail.com", pass: key.password},
+      }),
+      n = {
+        from: e.body.email,
+        to: "zalkhatib@mail.sfsu.edu",
+        subject: "You have a new message",
+        html: o,
+      };
+    a.sendMail(n, function (e, s) {
+      e ? console.log(e) : console.log("Email sent: " + s.response);
+    });
+  }),
+  "production" === process.env.NODE_ENV)
+) {
   app.use(express.static("client/build"));
-  const path = require("path");
-  app.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+  const e = require("path");
+  app.get("*", (s, o) => {
+    o.sendFile(e.resolve(__dirname, "client", "build", "index.html"));
   });
 }
 app.listen(process.env.PORT, () => {});

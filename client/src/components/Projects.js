@@ -6,20 +6,15 @@ import todolist from "./images/todolist.png";
 import datingapp from "./images/datingapp.png";
 import github from "./images/github.png";
 import weatherapp from "./images/weather.png";
-import pealces from "./images/places.png";
 import sziashoes from "./images/sziashoes.png";
 import photosSearch from "./images/photosSearch.png";
 import translation from "./images/translation.png";
 import teen from "./images/teen.png";
 import Drum from "./images/Drum.png";
 import codePlayGround from "./images/codePlayGround.png";
-import ContactSaver from "./images/ContactSaver.png";
 import "aos/dist/aos.css";
-import {Link, Element, animateScroll as scroll} from "react-scroll";
-
 import Cards from "./Cards";
 import {useState} from "react";
-import Circle from "./Circle";
 
 function Projects() {
   const [show, setShow] = useState(false);

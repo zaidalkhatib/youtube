@@ -10,7 +10,7 @@
 
 .nav-bar-element {
     margin: 1rem 3rem;
-    color: white;
+    color: #fff;
     transition: all 0.4s;
     cursor: pointer;
 }
@@ -21,7 +21,7 @@
 
 .nav-bar-icon {
     margin: 1rem 3rem;
-    color: white;
+    color: #fff;
     transition: all 0.4s;
 }
 

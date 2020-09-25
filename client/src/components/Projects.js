@@ -177,7 +177,7 @@ function Projects() {
                 description={
                   "This website allowas you to translate languages & search on wikipedia."
                 }
-                liveWebsite={"https://wiki-translation.vercel.appp"}
+                liveWebsite={"https://wiki-translation.vercel.app"}
                 githubCode={"https://github.com/zaidalkhatib/translation"}
                 language={"ReactJS"}
                 image={translation}

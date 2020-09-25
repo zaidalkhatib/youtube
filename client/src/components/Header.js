@@ -2,7 +2,7 @@ import React from "react";
 import "./header.css";
 
 import NavBar from "./NavBar";
-import {Link, animateScroll as scroll} from "react-scroll";
+import {Link} from "react-scroll";
 import Circle from "./Circle";
 
 const Header = () => {

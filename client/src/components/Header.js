@@ -1,7 +1,6 @@
 import React from "react";
 import "./header.css";
 
-import resume from "./images/Zaid-Alkhatib-Resume.pdf";
 import NavBar from "./NavBar";
 import {Link, animateScroll as scroll} from "react-scroll";
 import Circle from "./Circle";
@@ -17,14 +16,6 @@ const Header = () => {
             <span className="heading-primary--main">Zaid Alkhatib</span>
             <span className="heading-primary--sub"> Developer</span>
           </h1>
-          {/* 
-          <a
-            href={resume}
-            download
-            className="btn second btn--white btn--animated"
-          >
-            Resume
-          </a> */}
 
           <Link
             href="#projects"

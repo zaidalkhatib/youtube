@@ -1,10 +1,6 @@
 import React from "react";
 // import {easeQuadInOut} from "d3-ease";
-import {
-  CircularProgressbar,
-  CircularProgressbarWithChildren,
-  buildStyles,
-} from "react-circular-progressbar";
+import {CircularProgressbar, buildStyles} from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import "./Circle.css";
 import ReviewsProvider from "./ReviewsProvider";

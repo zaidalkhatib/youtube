@@ -12,6 +12,8 @@ import translation from "./images/translation.png";
 import teen from "./images/teen.png";
 import Drum from "./images/Drum.png";
 import codePlayGround from "./images/codePlayGround.png";
+import newsletter from "./images/newsletter.png";
+
 import "aos/dist/aos.css";
 import Cards from "./Cards";
 import {useState} from "react";
@@ -182,6 +184,7 @@ function Projects() {
                 language={"ReactJS"}
                 image={translation}
               />
+
               <Cards
                 name={"Love Birds"}
                 description={
@@ -191,6 +194,16 @@ function Projects() {
                 githubCode={"https://github.com/zaidalkhatib/Love-Birds"}
                 language={"Bootstrap"}
                 image={datingapp}
+              />
+              <Cards
+                name={"Newsletter"}
+                liveWebsite={"https://newsletter-campgin.herokuapp.com/"}
+                githubCode={"https://github.com/zaidalkhatib/newsletter"}
+                description={
+                  " This is a newsletter website allows companies to collect emails for their campaign."
+                }
+                image={newsletter}
+                language={"NodeJS"}
               />
               <Cards
                 name={"Drum Play Ground"}

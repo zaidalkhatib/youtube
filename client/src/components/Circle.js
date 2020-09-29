@@ -4,14 +4,8 @@ import {CircularProgressbar, buildStyles} from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import "./Circle.css";
 import ReviewsProvider from "./ReviewsProvider";
-const calcColor = (percent, start, end) => {
-  let a = percent / 100;
-  let b = (end - start) * a;
-  let c = b + start;
-  return "hsl(" + c + ",100%, 50%)";
-};
+
 const Circle = ({number, apps}) => {
-  const percentage = 40;
   return (
     <div>
       <div className="main-circle">

@@ -50,7 +50,7 @@ const Cards = ({
                 </div>
               </div>
             </div>
-            <img style={{height: "160px"}} src={image} />
+            <img style={{height: "160px"}} src={image} alt="" />
           </div>
           <div className="content">
             <a className="header">{name}</a>

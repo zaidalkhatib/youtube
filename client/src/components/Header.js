@@ -1,6 +1,5 @@
 import React from "react";
 import "./header.css";
-
 import NavBar from "./NavBar";
 import {Link} from "react-scroll";
 import Circle from "./Circle";
@@ -26,7 +25,6 @@ const Header = () => {
             smooth={true}
             offset={50}
             duration={500}
-            className="btn"
           >
             <Circle apps="React" number="28" />
           </Link>

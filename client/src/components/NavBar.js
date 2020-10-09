@@ -1,7 +1,7 @@
 import React from "react";
 import "./NavBar.css";
 import {Link} from "react-scroll";
-import resume from "./images/Zaid-Alkhatib-Resume.pdf";
+import resume from "./images/ZaidAlkhatibResume.pdf";
 const NavBar = () => {
   return (
     <div>

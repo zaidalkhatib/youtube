@@ -2,7 +2,6 @@ import React from "react";
 import "./header.css";
 import NavBar from "./NavBar";
 import {Link} from "react-scroll";
-import Circle from "./Circle";
 
 const Header = () => {
   return (
@@ -25,9 +24,7 @@ const Header = () => {
             smooth={true}
             offset={50}
             duration={500}
-          >
-            <Circle apps="React" number="28" />
-          </Link>
+          ></Link>
           <Link
             href="#projects"
             className="btn"
@@ -37,9 +34,7 @@ const Header = () => {
             smooth={true}
             offset={50}
             duration={500}
-          >
-            <Circle apps="Node" number="18" />
-          </Link>
+          ></Link>
           <Link
             href="#projects"
             className="btn"
@@ -49,9 +44,7 @@ const Header = () => {
             smooth={true}
             offset={50}
             duration={500}
-          >
-            <Circle apps="Java" number="15" />
-          </Link>
+          ></Link>
           <div className="icon">
             <Link
               style={{color: "white"}}

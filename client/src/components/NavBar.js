@@ -36,13 +36,13 @@ const NavBar = () => {
           href="https://www.linkedin.com/in/zaid-alkhatib-1736bb197/"
           className="nav-bar-element mediaIcon"
         >
-          <i class="fab fa-linkedin"></i>
+          <i className="fab fa-linkedin"></i>
         </a>
         <a
           href="https://github.com/zaidalkhatib/"
           className="nav-bar-element mediaIcon"
         >
-          <i class="fab fa-github"></i>
+          <i className="fab fa-github"></i>
         </a>
       </ul>
     </div>

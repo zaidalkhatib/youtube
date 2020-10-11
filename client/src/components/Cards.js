@@ -10,11 +10,11 @@ const Cards = ({
   language,
 }) => {
   useEffect(() => {
-    AOS.init();
     window.jQuery(".special.cards  .image").dimmer({
       on: "hover",
     });
   }, []);
+  AOS.init();
   return (
     <div
       style={{

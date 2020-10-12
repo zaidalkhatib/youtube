@@ -3,9 +3,9 @@ const express = require("express"),
   var compression = require('compression')
   bodyParser = require("body-parser"),
   key = require("./key"),
+  app = express();
   app.use(compression({ filter: shouldCompress }))
 
-  app = express();
 if (
   (app.use(bodyParser.urlencoded({extended: !1})),
   app.use(bodyParser.json()),

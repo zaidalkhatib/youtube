@@ -5,7 +5,7 @@ if (
   ((bodyParser = require("body-parser")),
   (key = require("./key")),
   (app = express()),
-  app.use(compression({filter: shouldCompress})),
+  app.use(compression()),
   app.use(bodyParser.urlencoded({extended: !1})),
   app.use(bodyParser.json()),
   app.post("/message", (e, s) => {

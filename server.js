@@ -1,7 +1,10 @@
 const express = require("express"),
   nodemailer = require("nodemailer"),
+  var compression = require('compression')
   bodyParser = require("body-parser"),
   key = require("./key"),
+  app.use(compression({ filter: shouldCompress }))
+
   app = express();
 if (
   (app.use(bodyParser.urlencoded({extended: !1})),

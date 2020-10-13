@@ -31,7 +31,7 @@ export const initalPorjects = [
   },
   {
     name: "GitHub Search",
-    liveWebsite: "https://githib-finder.vercel.app/",
+    liveWebsite: "https://github-searcher.zaidalkhatib.vercel.app/",
     githubCode: "https://github.com/zaidalkhatib/github-Searcher",
     image: github,
     description:
@@ -97,13 +97,13 @@ export const otherProjects = [
   },
 
   {
-    name: "SZIA Store",
+    name: "The Books Shelf",
     description:
-      "This is shoes store. It has all the features from viewing to checking out.",
-    liveWebsite: "https://zaidalkhatib.github.io/SIZA-StroeFront",
-    githubCode: "https://github.com/zaidalkhatib/SIZA-StroeFront",
-    language: "NodeJS",
-    image: sziashoes,
+      "This is a bookshelf gives the ability to add books to your shelf. Built using vanilla JavaScript.",
+    liveWebsite: "https://github.com/zaidalkhatib/The-Books-Shelf",
+    githubCode: "https://zaidalkhatib.github.io/The-Books-Shelf/",
+    language: "Vanilla JS",
+    image: booksShelf,
   },
   {
     name: "Photos Search",
@@ -113,15 +113,6 @@ export const otherProjects = [
     githubCode: "https://github.com/zaidalkhatib/photos-search",
     language: "ReactJS",
     image: photosSearch,
-  },
-  {
-    name: "The Books Shelf",
-    description:
-      "This is a bookshelf gives the ability to add books to your shelf. Built using vanilla JavaScript.",
-    liveWebsite: "https://github.com/zaidalkhatib/The-Books-Shelf",
-    githubCode: "https://zaidalkhatib.github.io/The-Books-Shelf/",
-    language: "Vanilla JS",
-    image: booksShelf,
   },
   {
     name: "GitHub Search-2",
@@ -187,6 +178,15 @@ export const otherProjects = [
     githubCode: "https://github.com/zaidalkhatib/TaskList",
     language: "Vanilla JS",
     image: taskList,
+  },
+  {
+    name: "SZIA Store",
+    description:
+      "This is shoes store. It has all the features from viewing to checking out.",
+    liveWebsite: "https://zaidalkhatib.github.io/SIZA-StroeFront",
+    githubCode: "https://github.com/zaidalkhatib/SIZA-StroeFront",
+    language: "NodeJS",
+    image: sziashoes,
   },
   {
     name: "Drum Play Ground",
